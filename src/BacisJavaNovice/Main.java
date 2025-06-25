@@ -1,5 +1,7 @@
 package BacisJavaNovice;
 
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
         //
@@ -12,6 +14,10 @@ public class Main {
         //
         double dNummer = 3.1;
         System.out.println(square(dNummer));
+        //
+        Scanner sc = new Scanner(System.in);
+        String name = sc.nextLine();
+        System.out.print("Hallodrio, " + name);
     }
 
     public static void myName(){
