@@ -1,8 +1,8 @@
 Aufgabe #1
 Level: Novice
-Schreibe ein Programm das deinen Namen ausgibt.
-Lass den Namen mit Hilfe einer Schleife 5 mal ausgeben.
-Schreibe eine Methode die prüft ob eine Zahl größer als 0 ist.
++Schreibe ein Programm das deinen Namen ausgibt.
++Lass den Namen mit Hilfe einer Schleife 5 mal ausgeben.
++Schreibe eine Methode die prüft ob eine Zahl größer als 0 ist.
 Schreibe eine Methode die das Quadrat einer Zahl berechnet.
 Schreibe ein Programm, das den Namen des Nutzers einliest (Scanner) und ihn mit Namen begrüßt.
 (Nicht vergessen: für alle(außer System.out.println(), Nutzereingaben, Random) Methoden Tests zu schreiben 🙂)
