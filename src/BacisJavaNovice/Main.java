@@ -25,15 +25,15 @@ public class Main {
         System.out.println("Hallodrio, " + name);
     }
 
-    public static void myName(String name){
+    public static void myName(String name) {
         System.out.println(name);
     }
 
-    public static boolean isMehrAls0(int nummer){
+    public static boolean isMehrAls0(int nummer) {
         return nummer > 0;
     }
 
-    public static double square(double nummer){
+    public static double square(double nummer) {
         return Math.pow(nummer, 2);
     }
 }
