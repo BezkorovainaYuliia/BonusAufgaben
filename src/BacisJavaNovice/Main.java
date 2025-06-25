@@ -2,11 +2,16 @@ package BacisJavaNovice;
 
 public class Main {
     public static void main(String[] args) {
+        //
         for (int i = 0; i < 5; i++) {
             myName();
         }
+        //
         int nummer = -1;
         System.out.println("Das Zahl " + nummer + " is grosser als 0 " + isMehrAls0(nummer));
+        //
+        double dNummer = 3.1;
+        System.out.println(square(dNummer));
     }
 
     public static void myName(){
@@ -14,6 +19,10 @@ public class Main {
     }
 
     public static boolean isMehrAls0(int nummer){
-        return nummer > 0 ? true : false;
+        return nummer > 0;
+    }
+
+    public static double square(double nummer){
+        return Math.pow(nummer, 2);
     }
 }
