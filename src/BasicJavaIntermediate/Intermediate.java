@@ -1,5 +1,9 @@
 package BasicJavaIntermediate;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Intermediate {
     public static String getNummer(int  nummer) {
         String [] arrayNummers = {"eins", "zwei", "drei", "vier", "fünf", "sechs", "sieben", "acht", "neun", "zehn"};
@@ -7,7 +11,12 @@ public class Intermediate {
     }
 
     public static void main(String[] args) {
-        makeArray100_3_5();
+        //makeArray100_3_5();
+        String[] str = listUsers();
+        for(String s : str) {
+            if (s == null) break;
+            System.out.print(s + "\t");
+        }
     }
     public static void makeArray100_3_5(){
         String[] array100 = new String[100];
@@ -26,5 +35,19 @@ public class Intermediate {
             counter++;
         }
 
+    }
+    public static String[]  listUsers() {
+        String[] listUsers = new String[10];
+        Scanner scanner = new Scanner(System.in);
+        int counter = 0;
+        String antwort;
+        do {
+            System.out.println("Dein Name ist ");
+            listUsers[counter] = scanner.nextLine();
+            counter++;
+            System.out.println("Weiter ?");
+            antwort = scanner.nextLine();
+        } while (antwort.equals("ja") && counter < 10);
+        return listUsers;
     }
 }
