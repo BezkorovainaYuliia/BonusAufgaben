@@ -1,7 +1,5 @@
 package BasicJavaIntermediate;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Intermediate {
@@ -11,7 +9,7 @@ public class Intermediate {
     }
 
     public static void main(String[] args) {
-        //makeArray100_3_5();
+        makeArray100_3_5();
         String[] str = listUsers();
         for(String s : str) {
             if (s == null) break;

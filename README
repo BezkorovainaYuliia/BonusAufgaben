@@ -16,5 +16,5 @@ Level: Intermediate
 +Vor Zahlen die durch 3 teilbar sind (modulo) soll ein # stehen
 +Vor Zahlen die durch 5 teilbar sind soll ein $ stehen
 
-Schreibe ein Programm die Wörter vom Benutzer einliest (Scanner) und diese in einem Array speichert.
-Gib vor jeder Eingabe jeweils die eingegebenen Wörter noch mal aus.
++Schreibe ein Programm die Wörter vom Benutzer einliest (Scanner) und diese in einem Array speichert.
++Gib vor jeder Eingabe jeweils die eingegebenen Wörter noch mal aus.
