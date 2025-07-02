@@ -61,11 +61,7 @@ class CarInspectionServiceTest {
             "0, 0, false, false, false"})
     void isCarCool(int numbersOfDoors, int numbersOfTires, boolean airBag, boolean seatBelt, boolean answer) {
         CarInspectionService service = new CarInspectionService();
-        Car car = new Car();
-        car.setNumbersOfDoors(numbersOfDoors);
-        car.setAirbag(airBag);
-        car.setSeatBelt(seatBelt);
-        car.setNumberOfTires(numbersOfTires);
+        Car car = new Car(numbersOfTires, numbersOfDoors, seatBelt, airBag);
         boolean checkCar = service.checkCar(car);
         assertEquals(answer, checkCar);
     }
