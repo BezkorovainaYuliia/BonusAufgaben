@@ -36,8 +36,12 @@ class ExpertTest {
         assertEquals(expected, actual);
     }
     @ParameterizedTest
-    @CsvSource({"1, I"})
-    public void test(String digital, String expected){
+    @CsvSource({"1, I",
+    "100, C",
+    "6, VI",
+    "99, XCIX",
+    "89, LXXXIX"})
+    public void test(int digital, String expected){
         String actual =  Expert.getRomaDigital(digital);
         assertEquals(expected, actual);
     }

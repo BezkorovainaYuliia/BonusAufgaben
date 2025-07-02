@@ -2,9 +2,6 @@ package BasicJavaExpert;
 
 public class Expert {
 
-    public static void main(String[] args) {
-
-    }
     public static String revers(String actual) {
         StringBuilder reversSting = new StringBuilder(actual);
         reversSting.reverse();
@@ -44,7 +41,20 @@ public class Expert {
         return quersumme;
     }
 
-    public static String getRomaDigital(String digital) {
-        return "";
+    public static String getRomaDigital(int digital) {
+        if (digital < 1 || digital > 100) {
+            return "Ungültige Eingabe. Bitte eine Zahl zwischen 1 und 100 eingeben.";
+        }
+
+        String[] zehner = {
+                "", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC", "C"
+        };
+
+        String[] einer = {
+                "", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"
+        };
+
+        return zehner[digital / 10] + einer[digital % 10];
     }
+
 }
