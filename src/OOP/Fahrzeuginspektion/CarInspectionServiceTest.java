@@ -29,4 +29,15 @@ class CarInspectionServiceTest {
         assertEquals(answer, isSeatBelt);
     }
 
+    @ParameterizedTest
+    @CsvSource({"true, true",
+            "false, false"})
+    void isCarHasAirBag_AllwaysTrue(boolean airBag, boolean answer) {
+        CarInspectionService service = new CarInspectionService();
+        Car car = new Car();
+        car.setAirbag(airBag);
+        boolean isAirBag = service.isAirBag(car);
+        assertEquals(answer, isAirBag);
+    }
+
 }
