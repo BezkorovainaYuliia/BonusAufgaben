@@ -17,4 +17,16 @@ class CarInspectionServiceTest {
     boolean isTires4Numbers = service.isTires4(car);
     assertEquals(answer, isTires4Numbers);
 }
+
+    @ParameterizedTest
+    @CsvSource({"true, true",
+            "false, false"})
+    void isCarHasseatBelts_AllwaysTrue(boolean seatBelt, boolean answer) {
+        CarInspectionService service = new CarInspectionService();
+        Car car = new Car();
+        car.setSeatBelt(seatBelt);
+        boolean isSeatBelt = service.isSeatBelt(car);
+        assertEquals(answer, isSeatBelt);
+    }
+
 }
