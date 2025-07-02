@@ -3,20 +3,20 @@ package OOP.Fahrzeuginspektion;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class CarInspectionServiceTest {
-@ParameterizedTest
+    @ParameterizedTest
     @CsvSource({"4, true",
-    "3, false",
-    "2, false"})
+            "3, false",
+            "2, false"})
     void isCarHas4Reifen_AllwaysTrue(int numbersOfTires, boolean answer) {
-    CarInspectionService service = new CarInspectionService();
-    Car car = new Car();
-    car.setNumberOfTires(numbersOfTires);
-    boolean isTires4Numbers = service.isTires4(car);
-    assertEquals(answer, isTires4Numbers);
-}
+        CarInspectionService service = new CarInspectionService();
+        Car car = new Car();
+        car.setNumberOfTires(numbersOfTires);
+        boolean isTires4Numbers = service.isTires4(car);
+        assertEquals(answer, isTires4Numbers);
+    }
 
     @ParameterizedTest
     @CsvSource({"true, true",
@@ -38,6 +38,19 @@ class CarInspectionServiceTest {
         car.setAirbag(airBag);
         boolean isAirBag = service.isAirBag(car);
         assertEquals(answer, isAirBag);
+    }
+
+    @ParameterizedTest
+    @CsvSource({"3, true",
+            "5, true",
+            "2, false",
+            "0, false"})
+    void isCarHas3Oder5Doors(int numbersOfDoors, boolean answer) {
+        CarInspectionService service = new CarInspectionService();
+        Car car = new Car();
+        car.setNumbersOfDoors(numbersOfDoors);
+        boolean is3Oder5Doors = service.is3Oder5Dooers(car);
+        assertEquals(answer, is3Oder5Doors);
     }
 
 }
