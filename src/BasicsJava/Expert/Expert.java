@@ -1,4 +1,4 @@
-package BasicJavaExpert;
+package BasicsJava.Expert;
 
 public class Expert {
 

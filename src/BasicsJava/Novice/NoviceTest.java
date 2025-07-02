@@ -1,4 +1,4 @@
-package BacisJavaNovice;
+package BasicsJava.Novice;
 
 import org.junit.jupiter.api.Test;
 

@@ -1,4 +1,4 @@
-package BacisJavaNovice;
+package BasicsJava.Novice;
 
 import java.util.Scanner;
 

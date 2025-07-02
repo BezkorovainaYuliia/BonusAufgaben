@@ -8,6 +8,20 @@ public class Car {
     private boolean seatBelt;
     private boolean airbag;
 
+    Car() {
+        this.numberOfTires = 0;
+        this.numbersOfDoors = 0;
+        this.seatBelt = false;
+        this.airbag = false;
+    }
+
+    Car(int numberOfTires, int numbersOfDoors, boolean seatBelt, boolean airbag) {
+        this.numberOfTires = numberOfTires;
+        this.numbersOfDoors = numbersOfDoors;
+        this.seatBelt = seatBelt;
+        this.airbag = airbag;
+    }
+
     public int getNumberOfTires() {
         return numberOfTires;
     }
@@ -61,18 +75,4 @@ public class Car {
                 ", airbag=" + airbag +
                 '}';
     }
-
-     Car(){
-        this.numberOfTires = 0;
-        this.numbersOfDoors = 0;
-        this.seatBelt = false;
-        this.airbag = false;
-     }
-
-     Car(int numberOfTires, int numbersOfDoors, boolean seatBelt, boolean airbag) {
-        this.numberOfTires = numberOfTires;
-        this.numbersOfDoors = numbersOfDoors;
-        this.seatBelt = seatBelt;
-        this.airbag = airbag;
-     }
 }
